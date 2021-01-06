@@ -12,7 +12,7 @@ If you are interested in supporting any of my open source work I encourage you t
 - Write some web site for my self
 - Release aurora.js 2.0
 - Contribute to more open source projects that I use. I want to contribute to all the main parts of my tech stack.
-- ~~Travel more and visit friends I've made through open source in Medellin, San Antonio (CL),  Madrid (ES), and Mars (Planet)~ 😞
+- ~Travel more and visit friends I've made through open source in Medellin, San Antonio (CL),  Madrid (ES), and Mars (Planet)~ 😞
 
 ## Projects
 
