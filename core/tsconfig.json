@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "outDir": "./src/",
+        "declaration": true,
+        "module": "CommonJS",
+        "baseUrl": "./node_modules/",
+        "forceConsistentCasingInFileNames": true,
+    },
+}
