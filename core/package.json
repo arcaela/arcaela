@@ -1,6 +1,6 @@
 {
     "license": "MIT",
-    "version": "1.2.46",
+    "version": "1.2.48",
     "name": "@arcaela/core",
     "publishConfig": {
         "access": "public"
@@ -27,8 +27,7 @@
     },
     "scripts": {
         "prepublishOnly": "tsc && node ./build.js && npm version patch",
-        "push": "npm publish --access=public",
-        "postpublish": "rm -rf ./src"
+        "push": "npm publish --access=public"
     },
     "engines": {
         "node": ">=10.13.0"
@@ -50,11 +49,11 @@
         "copyfiles": "^2.4.1"
     },
     "files": [
-        "./src/",
-        "./build.js",
-        "./DIRECTORY.md",
-        "./LICENSE",
-        "./ls.js",
-        "./SECURITY.md"
+        "src",
+        "build.js",
+        "DIRECTORY.md",
+        "LICENSE",
+        "ls.js",
+        "SECURITY.md"
     ]
 }
