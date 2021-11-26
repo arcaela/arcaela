@@ -1,0 +1,30 @@
+{
+  "name": "@arcaela/string",
+  "version": "1.0.1",
+  "description": "Tools and helpers for managing String's in @arcaela",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaela/arcaela.git",
+    "directory": "string"
+  },
+  "keywords": [
+    "strings",
+    "@arcaela",
+    "tools",
+    "framework",
+    "helpers"
+  ],
+  "author": {
+    "name": "Alejandro Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme"
+}
