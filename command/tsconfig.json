@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "target": "ES6",
+        "declaration": true,
+        "module": "CommonJS",
+        "emitDeclarationOnly": true,
+        "baseUrl": "./node_modules/",
+        "forceConsistentCasingInFileNames": true
+    }
+}

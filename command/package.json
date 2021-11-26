@@ -1,0 +1,37 @@
+{
+  "name": "@arcaela/command",
+  "version": "1.0.0",
+  "description": "@arcaela has implemented a library dedicated to building commands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaela/arcaela.git",
+    "directory": "command"
+  },
+  "keywords": [
+    "command",
+    "cmd",
+    "arcaela",
+    "@arcaela",
+    "framework",
+    "terminal",
+    "console",
+    "logger"
+  ],
+  "author": {
+    "name": "Alejandro Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "dependencies": {
+    "@arcaela/logger": "^1.0.0",
+    "lodash": "^4.17.21"
+  }
+}
