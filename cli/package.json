@@ -1,0 +1,35 @@
+{
+  "name": "@arcaela/cli",
+  "version": "1.2.5",
+  "description": "Arcaela CLI for management your arcaela's projects.",
+  "main": "./arcaela/index.js",
+  "bin": {
+    "arcaela": "./arcaela/index.js"
+  },
+  "scripts": {
+    "commit": "npm version patch",
+    "push": "npm publish --access=public",
+    "commit-push": "npm run commit && npm run push"
+  },
+  "preferGlobal": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/arcaela/arcaela.git",
+    "directory": "cli"
+  },
+  "author": "arcaela.reyes@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "dependencies": {
+    "@arcaela/command": "^1.0.1",
+    "@arcaela/fs": "^1.0.0",
+    "@arcaela/logger": "^1.0.1",
+    "cli-table": "^0.3.6",
+    "colors": "^1.4.0",
+    "cross-spawn": "^7.0.3",
+    "node-fetch": "^3.0.0"
+  }
+}
