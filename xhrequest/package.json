@@ -1,0 +1,32 @@
+{
+  "name": "@arcaela/xhrequest",
+  "version": "1.0.0",
+  "description": "A tool for creating asynchronous requests in a light and simple way, even handlers can be attached.",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arcaela/arcaela/xhrequest",
+    "directory": "xhrequest"
+  },
+  "keywords": [
+    "xhr",
+    "fetch",
+    "@arcaela",
+    "async",
+    "request",
+    "axios",
+    "ajax"
+  ],
+  "author": {
+    "name": "Alejandor Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@arcaela/utils": "^1.0.0"
+  }
+}
