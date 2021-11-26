@@ -1,0 +1,35 @@
+{
+  "name": "@arcaela/fs",
+  "version": "1.0.0",
+  "description": "@arcaela provides a powerful filesystem thanks to Glob and NodeFS inclusions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaela/arcaela.git",
+    "directory": "fs"
+  },
+  "keywords": [
+    "filesystem",
+    "fs",
+    "nodejs",
+    "@arcaela",
+    "framework",
+    "storage",
+    "listeners"
+  ],
+  "author": {
+    "name": "Alejandro Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "dependencies": {
+    "glob": "^7.2.0"
+  }
+}
