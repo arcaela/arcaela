@@ -1,0 +1,30 @@
+{
+  "name": "@arcaela/utils",
+  "version": "1.0.3",
+  "description": "Simple tools for maintaining and using @arcaela.",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaela/arcaela.git",
+    "directory": "utils"
+  },
+  "keywords": [
+    "utils",
+    "tools",
+    "@arcaela",
+    "javascript"
+  ],
+  "author": {
+    "name": "Alejandor Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme"
+}
