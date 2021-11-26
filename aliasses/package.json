@@ -1,0 +1,34 @@
+{
+  "name": "@arcaela/aliasses",
+  "version": "1.1.0",
+  "description": "Aliasses is a library developed from module-alias, we tried to make some performance improvements.",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "tsc && npm version minor",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arcaela/arcaela.git",
+    "directory": "aliasses"
+  },
+  "keywords": [
+    "aliasses",
+    "alias",
+    "module",
+    "@arcaela",
+    "nodejs"
+  ],
+  "author": {
+    "name": "Alejandro Reyes",
+    "email": "arcaela.reyes@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaela/arcaela/issues"
+  },
+  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.10"
+  }
+}
