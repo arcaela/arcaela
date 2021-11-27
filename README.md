@@ -1,12 +1,12 @@
 
 <br> <br>
-<center>
 <img src="./assets/banner.svg">
 
+<center>
 <a target="_blank" href="https://github.com/sponsors/arcaela"><img src="https://img.shields.io/badge/SPONSOR-%E2%99%A5-pink"></a> <a target="_blank" href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MD-blue"></a>
+</center>
 
-
-
+<center>
 <a target="_blank" href="https://npmjs.com/package/@arcaela/aliasses"><img src="https://img.shields.io/badge/aliasses-npm-red"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/command"><img src="https://img.shields.io/badge/command-npm-blue"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/eloquent"><img src="https://img.shields.io/badge/eloquent-npm-orange"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/fs"><img src="https://img.shields.io/badge/fs-npm-violet"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/logger"><img src="https://img.shields.io/badge/logger-npm-green"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/logger"><img src="https://img.shields.io/badge/logger-npm-xhrequest"></a>
 </center>
 
