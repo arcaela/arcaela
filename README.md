@@ -1,11 +1,11 @@
-<img src="./assets/banner.svg">
+<img src="./assets/banner-dark.svg">
 
 <div style="text-align:center;width:100%;">
 <a target="_blank" href="https://github.com/sponsors/arcaela"><img src="https://img.shields.io/badge/SPONSOR-%E2%99%A5-pink"></a> <a target="_blank" href="./LICENSE"><img src="https://img.shields.io/badge/LICENSE-MD-blue"></a>
 </div>
 
 <div style="text-align:center;">
-<a target="_blank" href="https://npmjs.com/package/@arcaela/aliasses"><img src="https://img.shields.io/badge/aliasses-npm-red"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/command"><img src="https://img.shields.io/badge/command-npm-blue"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/eloquent"><img src="https://img.shields.io/badge/eloquent-npm-orange"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/fs"><img src="https://img.shields.io/badge/fs-npm-violet"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/logger"><img src="https://img.shields.io/badge/logger-npm-green"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/logger"><img src="https://img.shields.io/badge/logger-npm-xhrequest"></a>
+    <a target="_blank" href="https://npmjs.com/package/@arcaela/aliasses"> <img src="https://img.shields.io/badge/aliasses-1.1-red"></a> <a target="_blank" href="https://npmjs.com/package/@arcaela/command"> <img src="https://img.shields.io/badge/command-1.0-blue"> </a> <a target="_blank" href="https://npmjs.com/package/@arcaela/eloquent"> <img src="https://img.shields.io/badge/eloquent-1.0-orange"> </a> <a target="_blank" href="https://npmjs.com/package/@arcaela/fs"> <img src="https://img.shields.io/badge/fs-1.0-violet"> </a> <a target="_blank" href="https://npmjs.com/package/@arcaela/logger"> <img src="https://img.shields.io/badge/logger-1.0-green"> </a> <a target="_blank" href="https://npmjs.com/package/@arcaela/string"> <img src="https://img.shields.io/badge/string-1.0-orange"> </a> <a target="_blank" href="https://npmjs.com/package/@arcaela/xhrequest"> <img src="https://img.shields.io/badge/xhrequest-1.0-b70000"> </a>
 </div>
 
 <br> <br>
