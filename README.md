@@ -33,14 +33,14 @@ I am a fan of frameworks, but I consider myself a strong developer in PHP and Ja
 
 These are projects I work on myself in my free time.
 
-- [@arcaela/aliasses](https://github.com/arcaela/arcaela/aliasses) - Empathize with your module imports, using aliases.
-- [@arcaela/command](https://github.com/arcaela/arcaela/command) - If you are one of those who like to use terminals, you can create your own native commands using "command".
-- [@arcaela/eloquent](https://github.com/arcaela/arcaela/eloquent) - Searching, filtering and mapping collections is the bread and butter for developers, that's why we offer you "eloquent".
-- [@arcaela/fs](https://github.com/arcaela/arcaela/fs) - Managing files and directories becomes a complicated task, between Promises and Catchers, but with FS you can use the best features of NodeJS synchronously.
-- [@arcaela/logger](https://github.com/arcaela/arcaela/logger) - Printing text in the terminal, creating load and progress buffers, is easier using "Logger".
-- [@arcaela/string](https://github.com/arcaela/arcaela/string) - Manipulating text strings is now easier.
-- [@arcaela/xhrequest](https://github.com/arcaela/arcaela/xhrequest) - In addition to AJAX, FETCH, AXIOS and different request libraries, XHRequest allows you to create and use your own request drivers.
-- [@arcaela/utils](https://github.com/arcaela/arcaela/utils) - A small box of tools, which are implemented in different factions of the library.
+- [@arcaela/aliasses](https://github.com/arcaela/arcaela/tree/main/aliasses) - Empathize with your module imports, using aliases.
+- [@arcaela/command](https://github.com/arcaela/arcaela/tree/main/command) - If you are one of those who like to use terminals, you can create your own native commands using "command".
+- [@arcaela/eloquent](https://github.com/arcaela/arcaela/tree/main/eloquent) - Searching, filtering and mapping collections is the bread and butter for developers, that's why we offer you "eloquent".
+- [@arcaela/fs](https://github.com/arcaela/arcaela/tree/main/fs) - Managing files and directories becomes a complicated task, between Promises and Catchers, but with FS you can use the best features of NodeJS synchronously.
+- [@arcaela/logger](https://github.com/arcaela/arcaela/tree/main/logger) - Printing text in the terminal, creating load and progress buffers, is easier using "Logger".
+- [@arcaela/string](https://github.com/arcaela/arcaela/tree/main/string) - Manipulating text strings is now easier.
+- [@arcaela/xhrequest](https://github.com/arcaela/arcaela/tree/main/xhrequest) - In addition to AJAX, FETCH, AXIOS and different request libraries, XHRequest allows you to create and use your own request drivers.
+- [@arcaela/utils](https://github.com/arcaela/arcaela/tree/main/utils) - A small box of tools, which are implemented in different factions of the library.
 
 <hr/><br/>
 
