@@ -1,10 +1,11 @@
 {
+  "version": "1.1.0",
+  "main": "./index.js",
   "name": "@arcaela/eloquent",
-  "version": "1.0.0",
   "description": "Eloquent is a library for the manipulation of Collections and Models, using an ideology similar to Laravel Eloquent.",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "npm publish --access=public",
+    "prepublishOnly": "npm version minor"
   },
   "repository": {
     "type": "git",

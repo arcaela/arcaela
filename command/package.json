@@ -1,11 +1,11 @@
 {
+  "version": "1.1.0",
+  "main": "./index.js",
   "name": "@arcaela/command",
-  "version": "1.0.1",
   "description": "@arcaela has implemented a library dedicated to building commands.",
-  "main": "index.js",
   "scripts": {
-    "prepublishOnly": "tsc && npm version patch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "npm publish --access=public",
+    "prepublishOnly": "tsc && npm version minor"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,8 @@
 {
+    "compileOnSave": true,
     "compilerOptions": {
-        "target": "ES6",
+        "target": "ES2017",
         "declaration": true,
         "module": "CommonJS",
-        "baseUrl": "./node_modules/",
-        "forceConsistentCasingInFileNames": true,
     },
 }

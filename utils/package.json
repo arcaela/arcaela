@@ -1,11 +1,11 @@
 {
   "name": "@arcaela/utils",
-  "version": "1.0.3",
+  "version": "1.2.0",
   "description": "Simple tools for maintaining and using @arcaela.",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "tsc && npm version minor",
+    "commit": "npm publish --access=public"
   },
   "repository": {
     "type": "git",

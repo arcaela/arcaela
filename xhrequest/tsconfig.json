@@ -1,8 +1,9 @@
 {
+    "compileOnSave": true,
     "compilerOptions": {
         "target": "ES2017",
         "declaration": true,
         "module": "CommonJS",
-        "baseUrl": "./node_modules/"
-    }
+        "emitDeclarationOnly": true
+    },
 }

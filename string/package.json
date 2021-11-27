@@ -1,10 +1,11 @@
 {
   "name": "@arcaela/string",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Tools and helpers for managing String's in @arcaela",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublishOnly": "npm version minor",
+    "commit": "npm publish --access=public"
   },
   "repository": {
     "type": "git",

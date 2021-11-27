@@ -1,10 +1,11 @@
 {
-  "name": "@arcaela/fs",
-  "version": "1.0.0",
-  "description": "@arcaela provides a powerful filesystem thanks to Glob and NodeFS inclusions.",
+  "version": "1.0.1",
   "main": "index.js",
+  "name": "@arcaela/fs",
+  "description": "@arcaela provides a powerful filesystem thanks to Glob and NodeFS inclusions.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "npm publish --access=public",
+    "prepublishOnly": "npm version minor"
   },
   "repository": {
     "type": "git",
