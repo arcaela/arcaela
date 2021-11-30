@@ -8,7 +8,6 @@
 .pnp.js
 
 # testing
-/tmp
 /coverage
 
 # misc
