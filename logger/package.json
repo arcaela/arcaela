@@ -1,11 +1,12 @@
 {
-  "version": "1.2.0",
-  "main": "index.js",
+  "version": "1.4.0",
+  "main": "src/index.js",
   "name": "@arcaela/logger",
   "description": "Lightweight, unobtrusive, configurable JavaScript logger.",
   "scripts": {
+    "start": "tsc --watch",
     "prepublishOnly": "tsc && npm version minor",
-    "commit": "npm publish --access=public"
+    "commit": "npm publish --access=public && rm -rf ./src"
   },
   "repository": {
     "type": "git",
@@ -27,5 +28,8 @@
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11"
   }
 }

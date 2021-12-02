@@ -1,9 +1,12 @@
 {
-    "compileOnSave": true,
     "compilerOptions": {
+        "outDir": "./src",
         "target": "ES2017",
         "declaration": true,
         "module": "CommonJS",
-        "emitDeclarationOnly": true
-    },
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "typeRoots": ["node_modules/@types"],
+        "allowSyntheticDefaultImports": true,
+    }
 }
