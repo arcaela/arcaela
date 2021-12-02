@@ -34,8 +34,10 @@
   "homepage": "https://github.com/arcaela/arcaela#readme",
   "dependencies": {
     "@arcaela/logger": "^1.0.0",
-    "@types/node": "^16.11.11",
     "colors": "^1.4.0",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11"
   }
 }
