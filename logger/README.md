@@ -18,23 +18,23 @@ Logger.log("¡Hello!");
 
 Esto no es muy útil dentro de la librería, pero podríamos hacer algunas otras acciones como:
 
-**buffer(text?: string) **
+**buffer(text?: string)**
 ```js
 Logger.buffer("¡Hello"); // Esto escribe un texto en la terminal (o concola).
 Logger.buffer("World!"); // Esto sobrescribe el texto en la terminal.
 ```
 
-**error(... any[]) **
+**error(... any[])**
 ```js
 Logger.error("Ups!"); // Imprime Ups! en color rojo.
 Logger.error("Warning", "with Joe!"); // Imprime "Warning" "with Joe!" en color rojo.
 ```
 
-**warn(... any[]) ** 
+**warn(... any[])** 
 > Es un alias para error/log, pero imprime los mensajes en color amarillo.
 
-**success(... any[]) ** 
+**success(... any[])** 
 > Es un alias para error/log, pero imprime los mensajes en color verde.
 
-**exit(... any[]) ** 
+**exit(... any[])** 
 > Imprime el mensaje en la cónsola y finaliza el proceso en caso de estar en una terminal.
