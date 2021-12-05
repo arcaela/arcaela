@@ -1,11 +1,12 @@
 {
+  "version": "1.2.0",
+  "main": "src/index.js",
   "name": "@arcaela/string",
-  "version": "1.1.0",
   "description": "Tools and helpers for managing String's in @arcaela",
-  "main": "index.js",
   "scripts": {
-    "prepublishOnly": "npm version minor",
-    "commit": "npm publish --access=public"
+    "start": "tsc --watch",
+    "prepublishOnly": "tsc && npm version minor",
+    "commit": "npm publish --access=public && rm -rf ./src"
   },
   "repository": {
     "type": "git",

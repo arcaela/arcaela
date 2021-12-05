@@ -10,6 +10,7 @@
  * @param {string | RegExp} matcher 
  * @returns {string}
  */
+
 function after(text = "", matcher = "") {
     let matches = text.split( matcher );
         matches.shift();
@@ -316,8 +317,13 @@ function ucwords(str = "") {
     return str.toLowerCase().replace(/^([a-z\u00E0-\u00FC])|\s+([a-z\u00E0-\u00FC])/g, ($1) => $1.toUpperCase())
 };
 
+function toPattern(text: string | RegExp, string: string | boolean='') : string | RegExp {
+    text = text instanceof RegExp ? text : new RegExp( text.replace(/([@.*-?/()|\\\[\]])/g, "\\$1") );
+    return string===true ? String( text ).replace(/^\/(.*)\/([isgm]+)?$/, "$1") :
+        new RegExp( text, typeof string==='string' ? string : null );
+};
 
-module.exports = {
+export = {
     after,
     afterLast,
     before,
@@ -346,18 +352,6 @@ module.exports = {
 
 
 /************************     Development     *****************************/
-
-/**
- * 
- * @param {string} text 
- * @param {string | RegExp} hasRegExp 
- * @returns {string | RegExp}
- */
-function toPattern(text = "", hasRegExp = true) {
-    text = text instanceof RegExp ? text
-        : new RegExp( String(text).replace(/([@.*-?/()|\\\[\]])/g, "\\$1") );
-    return hasRegExp===true ? String(text).replace(/^\/(.*)\/([isgm]+)?$/, "$1") : new RegExp( text, hasRegExp );
-};
 
 function replace(word = "", find = "", replacer = "") {
     return word.replace(toPattern(find, "g"), replacer);
@@ -391,24 +385,17 @@ function put(word = "", index = 0, union = "") {
     return splice(word, index, 0, union);
 };
 
-/**
- * 
- * @param {string} word 
- * @param {{
- *  seperator:string
- *  width: number
- *  cut: boolean
- *  preserveSpaces: boolean
- *  trailingSpaces: boolean
- * }} options 
- * @returns {string}
- */
-function wrap(word = "", options = {}) {
-    options.width ||= 75;
-    options.cut ||= false;
-    options.seperator ||= "\n";
-    options.preserveSpaces ||= false;
-    options.trailingSpaces ||= false;
+
+function wrap(word: string = "", options) : string {
+    options = {
+        width: 75,
+        cut: false,
+        seperator: "\n",
+        preserveSpaces: false,
+        trailingSpaces: false,
+        ...options,
+    };
+
     let result = '';
     if (options.width <= 0) return word;
     else if (!options.cut) {
