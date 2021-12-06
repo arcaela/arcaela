@@ -1,0 +1,14 @@
+<svg version="1.0" width="585.997px" height="83.632px" viewBox="0 0 585.997 83.632" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <bx:grid x="0" y="0" width="39.987" height="39.987"></bx:grid>
+    <bx:guide x="660.305" y="136.874" angle="0"></bx:guide>
+    <bx:guide x="659.553" y="312.855" angle="90"></bx:guide>
+    <bx:guide x="424.373" y="214.098" angle="0"></bx:guide>
+  </defs>
+  <path d="M 35.626 9.524 C 27.516 10.528 20.333 14.543 15.236 20.911 C 3.615 35.418 7.488 56.89 23.47 66.536 C 30.826 70.975 39.955 72.103 48.33 69.578 C 50.228 69.014 53.036 67.807 53.036 67.556 C 53.036 67.288 51.937 65.344 51.185 64.277 C 50.871 63.838 50.604 63.446 50.589 63.414 C 50.558 63.399 49.852 63.65 49.005 63.996 C 45.648 65.36 43.233 65.815 39.312 65.815 C 36.849 65.815 36.034 65.751 34.56 65.469 C 26.31 63.823 19.597 58.631 16.02 51.135 C 10.484 39.528 14.468 25.49 25.275 18.495 C 33.038 13.476 42.653 12.943 50.887 17.068 C 63.356 23.326 68.611 38.555 62.619 51.103 C 61.835 52.734 60.314 55.244 60.093 55.244 C 60.031 55.244 55.325 47.198 49.648 37.363 C 43.97 27.53 39.281 19.483 39.234 19.483 C 39.186 19.483 34.951 26.808 29.855 35.748 C 24.741 44.704 19.612 53.674 19.612 53.674 L 23.564 53.643 L 27.516 53.597 L 33.336 43.135 C 36.536 37.363 39.186 32.658 39.234 32.658 C 39.328 32.658 54.165 58.051 55.781 60.968 C 56.862 62.928 57.882 64.34 58.211 64.34 C 58.572 64.34 62.024 61.031 63.262 59.509 C 72.343 48.249 72.406 32.172 63.387 20.911 C 56.69 12.535 46.15 8.222 35.626 9.524 Z" style="stroke-miterlimit: 1; stroke: rgb(1, 114, 178); stroke-width: 3px; stroke-opacity: 0.32; fill: rgb(132, 137, 144);">
+    <title>LOGO</title>
+  </path>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 13px; white-space: pre;" x="77.64" y="70.337"><title>SUBTITLE</title>The software architects develop in Arcaelas.</text>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 45.6px; stroke: rgb(13, 17, 23); stroke-opacity: 0.75; white-space: pre;" x="79.051" y="55.761">ARCAELAS INSIDERS</text>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 27.2px; stroke: rgb(13, 17, 23); stroke-opacity: 0.75; white-space: pre;" x="556.781" y="73.216">©</text>
+</svg>

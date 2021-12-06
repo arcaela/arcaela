@@ -100,3 +100,12 @@ File.write("/config/database.json", { username:"root" }, (err)=>{
     console.log("Saved");
 })
 ```
+
+</br>
+
+> ¿Want to discuss any of my open source projects, or something else? Send me a direct message on [Instagram](https://instagram.com/arcaelas). </br>
+If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaela).
+<hr/>
+<div style="text-align:center;">
+    <img src="../assets/footer-dark.svg" width="200px">
+</div>
