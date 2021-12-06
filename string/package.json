@@ -1,5 +1,5 @@
 {
-  "version": "1.3.0",
+  "version": "1.4.0",
   "main": "src/index.js",
   "name": "@arcaelas/string",
   "description": "Tools and helpers for managing String's in @arcaelas",
