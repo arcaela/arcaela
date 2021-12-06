@@ -73,6 +73,6 @@ export = async function fetchDriver<R extends Arcaela.xhrequest.RequestInit, O e
         /* We call the functions after error the request. */
         for(let error of options.events.error)
             error(err);
-        return err;
+        throw err;
     });
 };

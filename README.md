@@ -48,11 +48,10 @@ These are projects I work on myself in my free time.
 - [@arcaelas/string](https://github.com/arcaelas/arcaelas/tree/main/string) - Manipulating text strings is now easier.
 - [@arcaelas/xhrequest](https://github.com/arcaelas/arcaelas/tree/main/xhrequest) - In addition to AJAX, FETCH, AXIOS and different request libraries, XHRequest allows you to create and use your own request drivers.
 - [@arcaelas/utils](https://github.com/arcaelas/arcaelas/tree/main/utils) - A small box of tools, which are implemented in different factions of the library.
-</br>
 
-> ¿Want to discuss any of my open source projects, or something else? Send me a direct message on [Instagram](https://instagram.com/arcaelas). </br>
-If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
+<div style="text-align:center;margin-top:50px;">
 <hr/>
-<div style="text-align:center;">
-    <img src="./assets/footer-dark.svg" width="200px">
+<img src="../assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+
+> ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>
