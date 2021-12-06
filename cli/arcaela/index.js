@@ -2,7 +2,7 @@
 
 require("colors");
 require("./command");
-const Command = require("@arcaela/command");
+const Command = require("@arcaelas/command");
 
 (function(){
     const fs = require("fs");
@@ -20,8 +20,8 @@ const Command = require("@arcaela/command");
 
     if(!packet)
         Logger.exit("\nFail: ".yellow.bold, "Please run this command in a", "npm".green ," project.\n")
-    else if(!('@arcaela/command' in packet.dependencies))
-        Logger.exit("\nFail: ".yellow.bold, "Please install","@arcaela/command".green,"before run this command.\n")
+    else if(!('@arcaelas/command' in packet.dependencies))
+        Logger.exit("\nFail: ".yellow.bold, "Please install","@arcaelas/command".green,"before run this command.\n")
     else if(!main || !fs.existsSync( main ))
         Logger.exit("\nFail: ".yellow.bold, "This project dont have main file.", "\n")
 

@@ -1,5 +1,5 @@
 const lodash = require('lodash');
-const { Fatal, isObject, get, empty, has, set, unset, paths, merge, } = require("@arcaela/utils");
+const { Fatal, isObject, get, empty, has, set, unset, paths, merge, } = require("@arcaelas/utils");
 
 class Model {
     #model = {};

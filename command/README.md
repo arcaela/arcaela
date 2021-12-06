@@ -1,15 +1,20 @@
+<img alt="ARCAELAS LOGO" src="../assets/banner/dark.svg" />
+
 # Command
 
-Hoy en día una gran variedad de aplicaciones disponen de **comandos** para simplificar procesos y ser intuitivas, por ese motivo el equipo de desarrollo de **arcaela** ha implementado una librería dedicada a la construcción de **comandos**.
+Hoy en día una gran variedad de aplicaciones disponen de **comandos** para simplificar procesos y ser intuitivas, por ese motivo el equipo de desarrollo de **arcaelas** ha implementado una librería dedicada a la construcción de **comandos**.
 
 ## Instalación
-> `npm install arcaela/command`
-```js
-import Command from 'arcaela/command'
-const Command = require("arcaela/command");
+```bash
+npm install arcaelas/command
 ```
 
-> Antes que nada, para declarar un comando es necesario especificar un nombre con el cual será identificado.
+```js
+import Command from 'arcaelas/command'
+const Command = require("arcaelas/command");
+```
+
+Antes que nada, para declarar un comando es necesario especificar un nombre con el cual será identificado.
 ```js
 const serve = Command("serve",{
     usage:"Inicializar un servidor"
@@ -18,7 +23,7 @@ const serve = Command("serve",{
 
 <br/>
 
-# Propiedades
+# Propiedades dinámicas
 Es algo simple, ya tu comando está almacenado en la lista de comandos hábiles para el entorno.
 
 Ahora podríamos asumir que tu comando requiere de una lista de parámetros, entre ellos el número de puerto donde quieres ejecutar el **servidor**.
@@ -30,7 +35,7 @@ const serve = Command("serve", {
     }
 });
 ```
-Tu comando ahora espera que el número de puerto indicado sea **8080**, pero en caso de que el comando se ejecute así:
+> Tu comando ahora espera que el número de puerto indicado sea **8080**, pero en caso de que el comando se ejecute así:
 `serve --port 3000`
 entonces la propiedad **port** sería **3000** y no sería **8080**.
 
@@ -49,7 +54,7 @@ const serve = Command("serve", {
 });
 ```
 
-Al escribir `serve --port 3000` el valor de la propiedad **port** sería **8080** ya que su valor ha sido definido como estático.
+> Al escribir `serve --port 3000` el valor de la propiedad **port** sería **8080** ya que su valor ha sido definido como estático.
 
 <br/>
 
@@ -144,9 +149,9 @@ serve.exec( process.argv.slice(2) );
 ```
 
 
-# Globales
+# Statics
 
-El módulo de command tiene funciones Globales.
+El módulo de command tiene funciones estáticas.
 
 ## find(name: string | Function): Command
 > Buscar un comando por su nombre o por un iterador.
@@ -161,11 +166,9 @@ serve.exec(["-h"]); // Help of serve.
 Command.help(); // Help of all commands.
 ```
 
-</br>
-
-> ¿Want to discuss any of my open source projects, or something else? Send me a direct message on [Instagram](https://instagram.com/arcaelas). </br>
-If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaela).
+<div style="text-align:center;margin-top:50px;">
 <hr/>
-<div style="text-align:center;">
-    <img src="../assets/footer-dark.svg" width="200px">
+<img src="../assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+
+> ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>

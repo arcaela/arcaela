@@ -1,6 +1,6 @@
 import 'colors';
 const _ = require('lodash');
-const logger = require('@arcaela/logger');
+const logger = require('@arcaelas/logger');
 
 
 declare global {
@@ -10,7 +10,7 @@ declare global {
              * @description Optional properties, in case any of these are received as an argument.
              * @example
              * var options = { port:{ type:Number, value: 3000, macros:[{k:'prod', v:5000}] } }
-             * shell: arcaela --daemon --prod
+             * shell: arcaelas --daemon --prod
              * // In this case the port will be Number{5000} since a "prod" argument has been sent.
              */
             interface Macro {

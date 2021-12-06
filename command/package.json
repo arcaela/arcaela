@@ -1,8 +1,8 @@
 {
-  "version": "1.2.0",
+  "version": "1.4.0",
   "main": "src/index.js",
-  "name": "@arcaela/command",
-  "description": "@arcaela has implemented a library dedicated to building commands.",
+  "name": "@arcaelas/command",
+  "description": "@arcaelas has implemented a library dedicated to building commands.",
   "scripts": {
     "start": "tsc --watch",
     "prepublishOnly": "tsc && npm version minor",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcaela/arcaela.git",
+    "url": "git+https://github.com/arcaelas/arcaelas.git",
     "directory": "command"
   },
   "keywords": [
     "command",
     "cmd",
-    "arcaela",
-    "@arcaela",
+    "arcaelas",
+    "@arcaelas",
     "framework",
     "terminal",
     "console",
@@ -25,15 +25,15 @@
   ],
   "author": {
     "name": "Alejandro Reyes",
-    "email": "arcaela.reyes@gmail.com"
+    "email": "arcaelas.reyes@gmail.com"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arcaela/arcaela/issues"
+    "url": "https://github.com/arcaelas/arcaelas/issues"
   },
-  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "homepage": "https://github.com/arcaelas/arcaelas#readme",
   "dependencies": {
-    "@arcaela/logger": "^1.0.0",
+    "@arcaelas/logger": "^1.0.0",
     "colors": "^1.4.0",
     "lodash": "^4.17.21"
   },

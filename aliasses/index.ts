@@ -56,14 +56,14 @@ namespace Arcaela {
          * @param {string} alias 
          * @param {string} target 
          */
-        export function addAlias(alias: string, target: string){
+        export function add(alias: string, target: string){
             __store.alias[ alias ] = target;
             __store.aliasNames = Object.keys( __store.alias );
             __store.aliasNames = __store.aliasNames.sort();
         }
         /**
          * @example
-         * addAliasses({
+         * merge({
          *  "js":__dirname + "/dist/js/",
          *  "css":__dirname + "/dist/css/",
          * });
@@ -73,9 +73,9 @@ namespace Arcaela {
          * 
          * @param alias - Add aliasses as Object Alias
          */
-        export function addAliasses(alias: Record<string, string>){
+        export function merge(alias: Record<string, string>){
             for(let a in alias)
-                addAlias(a, alias[a]);
+                add(a, alias[a]);
         }
         /**
          * Remove all aliasses from registry.

@@ -140,7 +140,7 @@ export function unset(object, path=''){
 
 /**
  * @example
- * paths({ user:"arcaela", "age": 25, job:{ home:"dream", school:"student", } })
+ * paths({ user:"arcaelas", "age": 25, job:{ home:"dream", school:"student", } })
  * // ['user','age','job.home', 'job.school']
  * @param {{}} object 
  * @returns {string[]}

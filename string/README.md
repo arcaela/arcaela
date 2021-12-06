@@ -1,12 +1,14 @@
+<img src="../assets/banner/dark.svg">
+
 # Strings
 
-Con **Strings** de **arcaela** se añaden algunas funciones útiles para el manejo de cadenas de texto.
+Con **Strings** de **arcaelas** se añaden algunas funciones útiles para el manejo de cadenas de texto.
 
 Su implementación es sencilla:
 
 ```js
-import Str from 'arcaela/strings'
-const Str = require("arcaela/strings");
+import Str from 'arcaelas/strings'
+const Str = require("arcaelas/strings");
 ```
 
 ---
@@ -113,8 +115,8 @@ Str.endsWith("image.gif", "gi", 1); // true
 > Podríamos utilizar **end()** para hacer que una cadena de texto haga su terminación con el caracter o cadena indicado.
 
 ```js
-Str.end("/arcaela/photos", "/") // /arcaela/photos/
-Str.end("/arcaela/photos/", "/") // /arcaela/photos/
+Str.end("/arcaelas/photos", "/") // /arcaelas/photos/
+Str.end("/arcaelas/photos/", "/") // /arcaelas/photos/
 ```
 
 ---
@@ -181,8 +183,8 @@ Str.snakeCase("my dear mommy") // my_dear_mommy
 ---
 ### splice(text: string, start: number, end: number, replacer: string) : string
 ```js
-Str.splice("https://github.com/brcaelas/core/String", 19, 8, "arcaela");
-// "https://github.com/arcaela/core/String"
+Str.splice("https://github.com/brcaelas/core/String", 19, 8, "arcaelas");
+// "https://github.com/arcaelas/core/String"
 ```
 
 ---
@@ -190,10 +192,10 @@ Str.splice("https://github.com/brcaelas/core/String", 19, 8, "arcaela");
 > **start()** nos permite asegurar que el comienzo de la cadena respete un formato esperado.
 
 ```js
-Str.start("github.com/arcaela/core/String", "https://");
-// "https://github.com/arcaela/core/String"
-Str.start("https://github.com/arcaela/core/String", "https://");
-// "https://github.com/arcaela/core/String"
+Str.start("github.com/arcaelas/core/String", "https://");
+// "https://github.com/arcaelas/core/String"
+Str.start("https://github.com/arcaelas/core/String", "https://");
+// "https://github.com/arcaelas/core/String"
 ```
 
 ---
@@ -210,11 +212,9 @@ Str.ucwords("my name is alejandro reyes");
 // "My Name Is Alejandro Reyes"
 ```
 
-</br>
-
-> ¿Want to discuss any of my open source projects, or something else? Send me a direct message on [Instagram](https://instagram.com/arcaelas). </br>
-If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaela).
+<div style="text-align:center;margin-top:50px;">
 <hr/>
-<div style="text-align:center;">
-    <img src="../assets/footer-dark.svg" width="200px">
+<img src="../assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+
+> ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>

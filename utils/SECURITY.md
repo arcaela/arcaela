@@ -3,8 +3,8 @@
 This document outlines security procedures and general policies for the `standard`
 project.
 
-  * [Reporting a Bug](https://github.com/arcaela/arcaela/issues)
-  * [Read Wiki - BETA](https://github.com/arcaela/arcaela/wiki)
+  * [Reporting a Bug](https://github.com/arcaelas/arcaelas/issues)
+  * [Read Wiki - BETA](https://github.com/arcaelas/arcaelas/wiki)
 
 ## Reporting a Bug
 
@@ -13,7 +13,7 @@ Thank you for improving the security of `standard`. We appreciate your efforts a
 responsible disclosure and will make every effort to acknowledge your
 contributions.
 
-Report security bugs by emailing the lead maintainer at arcaela12@gmail.com.
+Report security bugs by emailing the lead maintainer at arcaelas12@gmail.com.
 
 The lead maintainer will acknowledge your email within 48 hours, and will send a
 more detailed response within 48 hours indicating the next steps in handling

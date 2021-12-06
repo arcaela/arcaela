@@ -20,12 +20,12 @@ declare global {
                 /**
                  * @description Create a new instance with this methods, but new props.
                  * @example
-                 * var model = new Model({ user:"arcaela" });
+                 * var model = new Model({ user:"arcaelas" });
                  * model.macro("update", prop=>console.log(prop));
                  *
                  * // Only cloned macros.
                  * var user = model.create({
-                 *  user:"arcaela",
+                 *  user:"arcaelas",
                  *  password:"1103"
                  * });
                  */
@@ -43,10 +43,10 @@ declare global {
                 /**
                  * @description Compare some object with this model and return diff keys/values.
                  * @example
-                 * var user = new Model({ username:"arcaela", social:{ github:"arcaela", facebook:"anonymous" } });
+                 * var user = new Model({ username:"arcaelas", social:{ github:"arcaelas", facebook:"anonymous" } });
                  *
-                 * var diff = user.diff({ social:{ github:"arcaela", facebook:"arcaela" } });
-                 * // Expected: Model{{ social:{ facebook:"arcaela" } }}
+                 * var diff = user.diff({ social:{ github:"arcaelas", facebook:"arcaelas" } });
+                 * // Expected: Model{{ social:{ facebook:"arcaelas" } }}
                  */
                 diff<C extends object>(query: C): Model<C>;
 
@@ -59,7 +59,7 @@ declare global {
                  * @description The each method iterates over the path in the model and passes each item to a callback.
                  * NOTE: The order of keys isn't guaranted
                  * @example
-                 * var user = new Model({ username:"arcaela", social:{ github:"arcaela", facebook:"anonymous" } });
+                 * var user = new Model({ username:"arcaelas", social:{ github:"arcaelas", facebook:"anonymous" } });
                  * collection.eachPath((path, value)=>{
                  *  // path : 'username' | 'social.github' | 'social.facebook'
                  * });
@@ -116,11 +116,11 @@ declare global {
                  * @example
                  * var model = new Model({ username:"Alejandro Reyes", password:"12345", hobbies:['dream', 'eat', 'play with my hiddens friends.' ] });
                  * var mapped = model.mapWithKeys((key, value, object)=>{
-                 *  if(key==='username') return [ key, "arcaela" ];
+                 *  if(key==='username') return [ key, "arcaelas" ];
                  *  else if(key==='password') return "*****";
                  *  else if(key==='hobbies') return [ key, [ "Nothing" ] ];
                  * });
-                 * // Expected: Model<{ username:"arcaela", password:"*****", hobbies:["Nothing"] }>
+                 * // Expected: Model<{ username:"arcaelas", password:"*****", hobbies:["Nothing"] }>
                  */
                 mapWithKeys(executor?: (key, value, item)=>[string, any]): this;
 
@@ -156,10 +156,10 @@ declare global {
                 /**
                  * @description The when method will execute the given callback when the first argument given to the method evaluates to true.
                  * @example
-                 * const user = new Model({ username:"arcaela" });
+                 * const user = new Model({ username:"arcaelas" });
                  * user.when( !user.has("password"), model => model.set("password", "myPassword"));
                  * user.toJSON();
-                 * // { username:"arcaela", password:"myPassword" }
+                 * // { username:"arcaelas", password:"myPassword" }
                  */
                 when(cond: boolean, then: (model: this) => void, calback: (model: this) => void): this;
                 
@@ -187,7 +187,7 @@ declare global {
                  * @example
                  * collection.addOperator("match", (item, key, value)=> item[ key ]?.match( value ) )
                  *
-                 * collection.where("username", 'match', /^arcaela?$/)
+                 * collection.where("username", 'match', /^arcaelas?$/)
                  */
                 addOperator<T extends keyof Operators, CB extends Function>(operator: T, callback: CB): this;
 
@@ -290,7 +290,7 @@ declare global {
                 /**
                  * @example
                  * this.find({
-                 *  usernmae:"arcaela",
+                 *  usernmae:"arcaelas",
                  *  email:/^arcae.*\@gmail\.com$/i
                  * })
                  */
@@ -300,10 +300,10 @@ declare global {
                  *
                  * @example
                  * this.findOne({
-                 *  usernmae:"arcaela",
+                 *  usernmae:"arcaelas",
                  *  email:/^arcae.*\@gmail\.com$/i
                  * })
-                 * //{ username:"arcaela", email:"arcaela@gmail.com" }
+                 * //{ username:"arcaelas", email:"arcaelas@gmail.com" }
                  */
                 findOne(query?: object): object;
 
@@ -551,7 +551,7 @@ declare global {
                  * @example
                  * collection.addOperator("match", (item, key, value)=> item[ key ]?.match( value ) )
                  *
-                 * collection.where("username", 'match', /^arcaela?$/)
+                 * collection.where("username", 'match', /^arcaelas?$/)
                  */
                 addOperator<T extends keyof Operators, CB extends Function>(operator: T, callback: CB): this;
                 
@@ -654,7 +654,7 @@ declare global {
                 /**
                  * @example
                  * this.find({
-                 *  usernmae:"arcaela",
+                 *  usernmae:"arcaelas",
                  *  email:/^arcae.*\@gmail\.com$/i
                  * })
                  */
@@ -664,10 +664,10 @@ declare global {
                  *
                  * @example
                  * this.findOne({
-                 *  usernmae:"arcaela",
+                 *  usernmae:"arcaelas",
                  *  email:/^arcae.*\@gmail\.com$/i
                  * })
-                 * //{ username:"arcaela", email:"arcaela@gmail.com" }
+                 * //{ username:"arcaelas", email:"arcaelas@gmail.com" }
                  */
                 findOne(query?: object): PromiseLike<object>;
  

@@ -1,8 +1,8 @@
 {
-  "version": "1.3.0",
-  "name": "@arcaela/utils",
+  "version": "1.4.0",
+  "name": "@arcaelas/utils",
   "main": "./src/index.js",
-  "description": "Simple tools for maintaining and using @arcaela.",
+  "description": "Simple tools for maintaining and using @arcaelas.",
   "scripts": {
     "start": "tsc --watch",
     "prepublishOnly": "tsc && npm version minor",
@@ -10,22 +10,22 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcaela/arcaela.git",
+    "url": "git+https://github.com/arcaelas/arcaelas.git",
     "directory": "utils"
   },
   "keywords": [
     "utils",
     "tools",
-    "@arcaela",
+    "@arcaelas",
     "javascript"
   ],
   "author": {
     "name": "Alejandor Reyes",
-    "email": "arcaela.reyes@gmail.com"
+    "email": "arcaelas.reyes@gmail.com"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arcaela/arcaela/issues"
+    "url": "https://github.com/arcaelas/arcaelas/issues"
   },
-  "homepage": "https://github.com/arcaela/arcaela#readme"
+  "homepage": "https://github.com/arcaelas/arcaelas#readme"
 }

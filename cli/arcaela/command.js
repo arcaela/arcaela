@@ -4,9 +4,9 @@ const path = require("path")
 const http = require("https");
 const spawn = require('cross-spawn');
 
-const Logger = require("@arcaela/logger");
-const Command = require("@arcaela/command");
-const { Directory } = require("@arcaela/fs");
+const Logger = require("@arcaelas/logger");
+const Command = require("@arcaelas/command");
+const { Directory } = require("@arcaelas/fs");
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
 
@@ -20,7 +20,7 @@ Command("create",{
 
         await Directory.mkdir( PROJECT_FOLDER );
         Logger.buffer("Info: ".blue.bold+"Downloading project file list...");
-        fetch("https://api.github.com/repos/arcaela/arcaela/git/trees/main").then(e=>e.json())
+        fetch("https://api.github.com/repos/arcaelas/arcaelas/git/trees/main").then(e=>e.json())
         .then(async res=>{
             console.clear();
             if( res.message ) throw new Error(res.message);
@@ -45,7 +45,7 @@ Command("create",{
                         Logger.buffer("(" + c + " / " + sizes.counts + ") [ "+ (c / sizes.counts * 100).toFixed(0) +"% ] - " + "Downloading ".yellow.bold + blob.filename);
                         await new Promise(resolve=>{
                             let stream = fs.createWriteStream( blob.path );
-                            http.get(`https://raw.githubusercontent.com/arcaela/arcaela/main/app/${ blob.filename }`, buffer=>{
+                            http.get(`https://raw.githubusercontent.com/arcaelas/arcaelas/main/app/${ blob.filename }`, buffer=>{
                                 buffer.pipe( stream );
                                 stream.on("finish", ()=>resolve( stream.close() ));
                             });

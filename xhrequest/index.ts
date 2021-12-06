@@ -1,4 +1,4 @@
-import { Fatal } from "@arcaela/utils/Errors"
+import { Fatal } from "@arcaelas/utils/Errors"
 import fetchDriver = require("./fetch-driver")
 declare global {
     namespace Arcaela {
@@ -135,8 +135,8 @@ declare global {
                  * Note: No use for Files, use files with File | FileList | Blob ...
                  * @example
                  * inputs: new FormData()
-                 * inputs: "username=arcaela&password=******"
-                 * inputs: { username:"arcaela" }
+                 * inputs: "username=arcaelas&password=******"
+                 * inputs: { username:"arcaelas" }
                  */                
                 inputs?: Record<string|number, BasicValues>
                 /**
@@ -284,11 +284,11 @@ class xhrequest {
      * // Set input request with "myCustomKey" and value.
      * req.input("myCustomKey", document.getElementById("username") )
      * 
-     * // Set input request as { username:"arcaela" }
-     * req.input({"username":"arcaela"})
+     * // Set input request as { username:"arcaelas" }
+     * req.input({"username":"arcaelas"})
      * 
-     * // Set input request as { username:"arcaela" }
-     * req.input("username", "arcaela")
+     * // Set input request as { username:"arcaelas" }
+     * req.input("username", "arcaelas")
      */
     public input(input: HTMLInputElement): this;
     public input(key: string, input: HTMLInputElement):this;

@@ -1,3 +1,5 @@
+<img alt="ARCAELAS LOGO" src="../assets/banner/dark.svg" />
+
 # FileSystem
 
 **FS** no posee funciones u expectativas distintas a los manejadores de archivos comunes, incluso esto se presenta como una versión **BETA** de este manejador y  ***Todos***  sus métodos son **Sícronos**.
@@ -5,8 +7,8 @@
 Su implementación es sencilla:
 
 ```js
-import { Directory, File } from 'arcaela/fs'
-const { Directory, File } = require("arcaela/fs");
+import { Directory, File } from 'arcaelas/fs'
+const { Directory, File } = require("arcaelas/fs");
 ```
 
 
@@ -27,8 +29,8 @@ Directory.match("./**/*.js") // Al JS files in recursive directory.
 > Creación de directorios **Sync** con posibilidades recursivas.
 
 ```js
-Directory.mkdir("./profiles/arcaela/photos/")
-fs.mkdir("./profiles/arcaela/photos/", {
+Directory.mkdir("./profiles/arcaelas/photos/")
+fs.mkdir("./profiles/arcaelas/photos/", {
     recursive:true
 })
 ```
@@ -101,11 +103,9 @@ File.write("/config/database.json", { username:"root" }, (err)=>{
 })
 ```
 
-</br>
-
-> ¿Want to discuss any of my open source projects, or something else? Send me a direct message on [Instagram](https://instagram.com/arcaelas). </br>
-If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaela).
+<div style="text-align:center;margin-top:50px;">
 <hr/>
-<div style="text-align:center;">
-    <img src="../assets/footer-dark.svg" width="200px">
+<img src="../assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+
+> ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>

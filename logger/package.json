@@ -1,7 +1,7 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "main": "src/index.js",
-  "name": "@arcaela/logger",
+  "name": "@arcaelas/logger",
   "description": "Lightweight, unobtrusive, configurable JavaScript logger.",
   "scripts": {
     "start": "tsc --watch",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcaela/arcaela.git",
+    "url": "git+https://github.com/arcaelas/arcaelas.git",
     "directory": "logger"
   },
   "keywords": [
     "logger",
-    "arcaela",
+    "arcaelas",
     "arcaelas",
     "log",
     "javascript",
@@ -23,7 +23,7 @@
   ],
   "author": {
     "name": "Alejandro Reyes",
-    "email": "arcaela.reyes@gmail.com"
+    "email": "arcaelas.reyes@gmail.com"
   },
   "license": "ISC",
   "dependencies": {

@@ -1,8 +1,8 @@
 {
   "license": "ISC",
-  "version": "1.12.0",
+  "version": "1.2.0",
   "main": "./src/index.js",
-  "name": "@arcaela/aliasses",
+  "name": "@arcaelas/aliasses",
   "description": "Aliasses is a library developed from module-alias, we tried to make some performance improvements.",
   "scripts": {
     "start": "tsc --watch",
@@ -11,24 +11,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcaela/arcaela.git",
+    "url": "git+https://github.com/arcaelas/arcaelas.git",
     "directory": "aliasses"
   },
   "keywords": [
     "aliasses",
     "alias",
     "module",
-    "@arcaela",
+    "@arcaelas",
     "nodejs"
   ],
   "author": {
     "name": "Alejandro Reyes",
-    "email": "arcaela.reyes@gmail.com"
+    "email": "arcaelas.reyes@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/arcaela/arcaela/issues"
+    "url": "https://github.com/arcaelas/arcaelas/issues"
   },
-  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "homepage": "https://github.com/arcaelas/arcaelas#readme",
   "devDependencies": {
     "@types/node": "^16.11.11"
   }

@@ -1,6 +1,6 @@
 // Type definitions for Arcaela 2.2
-// Project: https://github.com/arcaela/arcaela/core
-// Definitions by: arcaela <https://github.com/arcaela>
+// Project: https://github.com/arcaelas/arcaelas/core
+// Definitions by: arcaelas <https://github.com/arcaelas>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 import * as glob from 'glob';
 import * as node_fs from 'fs';

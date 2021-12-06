@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "./index.js",
-  "name": "@arcaela/eloquent",
+  "name": "@arcaelas/eloquent",
   "description": "Eloquent is a library for the manipulation of Collections and Models, using an ideology similar to Laravel Eloquent.",
   "scripts": {
     "commit": "npm publish --access=public",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arcaela/arcaela.git",
+    "url": "git+https://github.com/arcaelas/arcaelas.git",
     "directory": "eloquent"
   },
   "keywords": [
@@ -17,20 +17,20 @@
     "orm",
     "collection",
     "model",
-    "@arcaela",
+    "@arcaelas",
     "library"
   ],
   "author": {
     "name": "Alejandro Reyes",
-    "email": "arcaela.reyes@gmail.com"
+    "email": "arcaelas.reyes@gmail.com"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/arcaela/arcaela/issues"
+    "url": "https://github.com/arcaelas/arcaelas/issues"
   },
-  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "homepage": "https://github.com/arcaelas/arcaelas#readme",
   "dependencies": {
-    "@arcaela/utils": "^1.0.0",
+    "@arcaelas/utils": "^1.0.0",
     "lodash": "^4.17.21"
   }
 }

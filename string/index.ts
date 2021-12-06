@@ -153,12 +153,12 @@ function endsWith(word = "", union = "", endAt = 0) {
 
 /**
  * @example
- * Str.start("github.com/arcaela/core/String", "https://");
- * // "https://github.com/arcaela/core/String"
+ * Str.start("github.com/arcaelas/core/String", "https://");
+ * // "https://github.com/arcaelas/core/String"
  * 
  * @example
- * Str.start("https://github.com/arcaela/core/String", "https://");
- * // "https://github.com/arcaela/core/String"
+ * Str.start("https://github.com/arcaelas/core/String", "https://");
+ * // "https://github.com/arcaelas/core/String"
  * @param {string} text
  * @param {string} union 
  * @returns {string}
@@ -169,8 +169,8 @@ function start(text = "", union = "") {
 
 /**
  * @example
- * end("/profile/arcaela", "/")
- * // "/profile/arcaela/"
+ * end("/profile/arcaelas", "/")
+ * // "/profile/arcaelas/"
  * @param {string} text 
  * @param {string} union 
  * @returns {string}
@@ -280,8 +280,8 @@ function snakeCase(text = "") {
 
 /**
  * @example
- * splice("https://github.com/arcaela/core/String", 19, 8, "arcaela");
- * // "https://github.com/arcaela/core/String"
+ * splice("https://github.com/arcaelas/core/String", 19, 8, "arcaelas");
+ * // "https://github.com/arcaelas/core/String"
  * @param {string} word 
  * @param {number} startAt 
  * @param {number} endAt 

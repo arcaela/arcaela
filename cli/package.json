@@ -1,10 +1,10 @@
 {
   "version": "1.3.0",
-  "name": "@arcaela/cli",
-  "main": "./arcaela/index.js",
-  "description": "Arcaela CLI for management your arcaela's projects.",
+  "name": "@arcaelas/cli",
+  "main": "./arcaelas/index.js",
+  "description": "Arcaela CLI for management your arcaelas's projects.",
   "bin": {
-    "arcaela": "./arcaela/index.js"
+    "arcaelas": "./arcaelas/index.js"
   },
   "scripts": {
     "prepublishOnly": "npm version minor",
@@ -13,19 +13,19 @@
   "preferGlobal": true,
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/arcaela/arcaela.git",
+    "url": "git+ssh://git@github.com/arcaelas/arcaelas.git",
     "directory": "cli"
   },
-  "author": "arcaela.reyes@gmail.com",
+  "author": "arcaelas.reyes@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arcaela/arcaela/issues"
+    "url": "https://github.com/arcaelas/arcaelas/issues"
   },
-  "homepage": "https://github.com/arcaela/arcaela#readme",
+  "homepage": "https://github.com/arcaelas/arcaelas#readme",
   "dependencies": {
-    "@arcaela/command": "^1.0.1",
-    "@arcaela/fs": "^1.0.0",
-    "@arcaela/logger": "^1.0.1",
+    "@arcaelas/command": "^1.0.1",
+    "@arcaelas/fs": "^1.0.0",
+    "@arcaelas/logger": "^1.0.1",
     "cli-table": "^0.3.6",
     "colors": "^1.4.0",
     "cross-spawn": "^7.0.3",
