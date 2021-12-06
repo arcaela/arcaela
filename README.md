@@ -51,7 +51,7 @@ These are projects I work on myself in my free time.
 
 <div style="text-align:center;margin-top:50px;">
 <hr/>
-<img src="../assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+<img src="./assets/footer/dark.svg" width="400px" style="margin:20px 0;">
 
 > ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>
