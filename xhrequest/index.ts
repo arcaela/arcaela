@@ -1,5 +1,4 @@
 import { Fatal } from "@arcaelas/utils/Errors"
-import fetchDriver = require("./fetch-driver")
 declare global {
     namespace Arcaela {
         namespace HTTP {
@@ -80,7 +79,7 @@ declare global {
                 "X-XSS-Protection": any
             }
         }
-        namespace xhrequest {
+        namespace XHRequest {
             /**
              * @description Defaults values for object with key/value
              */
@@ -179,11 +178,11 @@ declare global {
 /**
  * @class
  */
-class xhrequest {
-    private request : Arcaela.xhrequest.RequestInit = {
+class XHRequest {
+    private request : Arcaela.XHRequest.RequestInit = {
         method: "GET",
     }
-    private options : Arcaela.xhrequest.Options = {
+    private options : Arcaela.XHRequest.Options = {
         driver:'fetch',
         drivers:{},
         cache: -1,
@@ -195,9 +194,9 @@ class xhrequest {
     }
     /**
      * @constructor
-     * @description Initiate xhrequest
+     * @description Initiate XHRequest
      */
-    constructor(url?: string, request?: Arcaela.xhrequest.RequestInit){
+    constructor(url?: string, request?: Arcaela.XHRequest.RequestInit){
         this.url(url).merge( request );
     }
     _domain: string = window.location.origin
@@ -207,7 +206,7 @@ class xhrequest {
      * XHR.domain("https://api.example.com/"); // Set domain
      */
     static domain(domain: string | URL) : void {
-        xhrequest.prototype._domain = domain instanceof URL ? domain.toString() : ((
+        XHRequest.prototype._domain = domain instanceof URL ? domain.toString() : ((
             typeof domain==='string' && domain.match(/^[a-z0-9]+\:\/\//)
         ) ? domain : window.location.origin);
     }
@@ -263,7 +262,7 @@ class xhrequest {
      *  "Allow-Methods":"POST,GET"
      * }) // define multiple Headers
      */
-    public header(headers: Arcaela.xhrequest.Headers, overwrite?: boolean) : this
+    public header(headers: Arcaela.XHRequest.Headers, overwrite?: boolean) : this
     public header<K extends keyof Arcaela.HTTP.Headers, V extends Arcaela.HTTP.Headers[ K ]>(key:K, v: V) : this;
     public header(...props: any[]){
         let [ key, value = false ] = props;
@@ -294,8 +293,8 @@ class xhrequest {
     public input(key: string, input: HTMLInputElement):this;
     public input(form: FormData, overwrite?: boolean): this;
     public input(queryString: string | URLSearchParams, overwrite?: boolean): this;
-    public input(key: string | number, value: Arcaela.xhrequest.BasicValues): this;
-    public input(inputs: Arcaela.xhrequest.ObjectWith): this;
+    public input(key: string | number, value: Arcaela.XHRequest.BasicValues): this;
+    public input(inputs: Arcaela.XHRequest.ObjectWith): this;
     public input(...props: any[]){
         let [ key, value = false ] = props;
         if(key instanceof HTMLInputElement){
@@ -429,7 +428,7 @@ class xhrequest {
      * XHR.on("error", err=> new MyCustomError(err.message))
      * 
      */
-    public on<E extends keyof Arcaela.xhrequest.EventListener, C extends Arcaela.xhrequest.EventListener[ E ]>(ev: E, callback: C) : ()=> void;
+    public on<E extends keyof Arcaela.XHRequest.EventListener, C extends Arcaela.XHRequest.EventListener[ E ]>(ev: E, callback: C) : ()=> void;
     public on(...props: any[]){
         let [ event, callback ] = props;
         (this.options.events[ event ] ||= []).push( callback );
@@ -464,7 +463,7 @@ class xhrequest {
      * @param {string} name 
      * @param {EventListener['before']} executor 
      */
-    public driver<N extends string, C extends Arcaela.xhrequest.EventListener['before']>(name: N, executor: C) : this;
+    public driver<N extends string, C extends Arcaela.XHRequest.EventListener['before']>(name: N, executor: C) : this;
     public driver<N extends string, C extends boolean>(name: N, active: C) : this;
     public driver(...props: any[]){
         let [ name, driver ] = props;
@@ -506,18 +505,18 @@ class xhrequest {
      * @example
      * return [ abort, Instance ];
      * @param {string} name 
-     * @param {Arcaela.xhrequest.EventListener['before']} executor 
+     * @param {Arcaela.XHRequest.EventListener['before']} executor 
      */
-    static driver<N extends string, C extends Arcaela.xhrequest.EventListener['before']>(name: N, executor: C) : void;
+    static driver<N extends string, C extends Arcaela.XHRequest.EventListener['before']>(name: N, executor: C) : void;
     static driver(...props: any[]){
         let [ name, driver = true ] = props;
         if(typeof name!=='string') new Fatal("type/string");
-        else if(typeof driver==='function') xhrequest.prototype.options.drivers[ name ] = driver;
+        else if(typeof driver==='function') XHRequest.prototype.options.drivers[ name ] = driver;
         else if(typeof driver==='boolean'){
             if(!driver) new Fatal("You cannot disable a handler, in its case you can select another handler using its name and the TRUE argument.");
-            else if(!(name in xhrequest.prototype.options.drivers))
+            else if(!(name in XHRequest.prototype.options.drivers))
                 new Fatal("It seems that the driver is not stored, in this case you must define the driver using the \"driver\" method (static or public) to define the driver.");
-            else xhrequest.prototype.options.driver = name;
+            else XHRequest.prototype.options.driver = name;
         }
     }
     /**
@@ -549,8 +548,8 @@ class xhrequest {
     /**
      * @description Use this method to call driver, but before call driver "BeforeEvents" are dispatched, and after success response
      * "SuccessEvents" will be dispatched or catch errors with "ErrorEvents".
-     * @param {function} then - Interxeptor for response after {@link Arcaela.xhrequest.EventListener Success events}
-     * @param {function} [handler] - Catch for errors after {@link Arcaela.xhrequest.EventListener Errors Events}
+     * @param {function} then - Interxeptor for response after {@link Arcaela.XHRequest.EventListener Success events}
+     * @param {function} [handler] - Catch for errors after {@link Arcaela.XHRequest.EventListener Errors Events}
      * @returns {Promise}
      */
     public async then(then?: (res: Response)=>Promise<any>, handler?: (err: Error)=>Promise<any>){
@@ -574,6 +573,5 @@ class xhrequest {
 }
 
 
-xhrequest.driver("fetch", fetchDriver)
-
-export default xhrequest;
+XHRequest.driver("fetch", require("./fetch-driver") );
+export default XHRequest;

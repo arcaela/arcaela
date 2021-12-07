@@ -1,4 +1,4 @@
-export = async function fetchDriver<R extends Arcaela.xhrequest.RequestInit, O extends Arcaela.xhrequest.Options>(req: R, options: O) : Promise<any> {
+export = async function fetchDriver<R extends Arcaela.XHRequest.RequestInit, O extends Arcaela.XHRequest.Options>(req: R, options: O) : Promise<any> {
     /* We call the functions before packaging the request. */
     for(let before of options.events.before)
         before(req, options);
@@ -40,7 +40,7 @@ export = async function fetchDriver<R extends Arcaela.xhrequest.RequestInit, O e
     /* CONTROLLERS */
     let { abort, signal } = new AbortController();
     req.signal = signal;
-    let store = (typeof caches==='object') ? await window.caches.open("xhrequest") : {
+    let store = (typeof caches==='object') ? await window.caches.open("XHRequest") : {
         match: async (req: Request) : Promise<Response> => null,
         put: async (req: Request, res: Response) : Promise<void> => null,
     }

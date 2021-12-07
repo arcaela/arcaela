@@ -1,5 +1,5 @@
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "main": "./src/index.js",
   "name": "@arcaelas/xhrequest",
   "description": "A tool for creating asynchronous requests in a light and simple way, even handlers can be attached.",
@@ -29,5 +29,8 @@
   "license": "ISC",
   "dependencies": {
     "@arcaelas/utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.12"
   }
 }
