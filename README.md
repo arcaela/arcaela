@@ -19,24 +19,22 @@
 
 # 👋 ¡Hey, i there using my brain!
 
-> 🌎 Currently I do not belong to any company and for this reason I have dedicated my time to develop software for **everyone on world**.
+> 🌎 We do not currently belong to any company and that is why we have dedicated our time to developing software for **all of you in the world**.
 
-🚧 I am also the maintainer of "arcaelas", a small project aimed at creating useful tools for development, among the languages ​​we handle we can mention PHP and JavaScript and I contribute to multiple projects of others developers.
-
-I am a fan of frameworks, but I consider myself a strong developer in PHP and JavaScript without using any framework.
+🚧 We are also the maintainers of "arcaelas", a small project aimed at creating useful tools for development, among the languages ​​we handle we can mention PHP and JavaScript and I contribute to multiple projects of others developers.
 
 > If you have already seen part of our project, I encourage you to be part of it, you can fork the repository and make the "pull request".
 
 ## Goals for 2022
-- Launch the second version of @arcaela
+- Launch the second version of @arcaelas
 - Contribute to more open source projects that I use.
-    > I want to contribute to all the main parts of my tech stack.
+    > We want to contribute to all the main parts of my tech stack.
 - Travel more and visit friends I've made through open source in Medellin, San Antonio (🇨🇱),  Madrid (🇪🇸), and the NSA 😞
 
 
 <br/>
 
-## Personal Open Source Projects
+## Collective Open Source Projects
 
 These are projects I work on myself in my free time.
 
