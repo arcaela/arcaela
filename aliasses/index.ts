@@ -1,10 +1,5 @@
 'use strict'
 
-
-
-
-
-
 const __path = require("path");
 const __main = '_simulateRepl' in require.main ? undefined : require.main;
 const __module = module.constructor.length ? module.constructor : require("module");
@@ -19,7 +14,6 @@ __module._nodeModulePaths = src=>{
     let paths = __nodeModulePaths.call(__module, src);
     return src.indexOf("node_modules")<0 ? __store.paths.concat( paths ) : paths;
 };
-
 
 let __resolveFilename = __module._resolveFilename;
 __module._resolveFilename = function _resolveFilename(req, parent, main: boolean, opts: object){
