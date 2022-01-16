@@ -12,7 +12,7 @@ declare global {
                 | "string/too-short"
                 | "string/too-long"
                 | "string/only-number"
-                | "string/only-string" | `${string}`
+                | "string/only-string"
             type ErrorObject = {
                 [K in Types]?: string
             };
