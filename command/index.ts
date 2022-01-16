@@ -1,6 +1,5 @@
 import 'colors';
 const _ = require('lodash');
-const logger = require('@arcaelas/logger');
 
 
 declare global {
@@ -224,15 +223,15 @@ function command(name: string, props: Arcaela.command.Props | null = null) : Arc
         async exec(argv: string[]) : Promise<Arcaela.command.Command> {
             const params = parseOptions(this.options, argv);
             if(params.argv.some(a=>['-h','--help'].includes(a))){
-                logger.log(`Arcaela CLI`.green.bold, ("(Servidores construídos en "+"NodeJS".green+")").bold )
-                logger.log("command:".yellow.bold, `${this.name}`.green )
-                logger.log("Usage:".yellow.bold, this.usage )
-                logger.log("Options:".yellow.bold)
+                console.log(`Arcaela CLI`.green.bold, ("(Servidores construídos en "+"NodeJS".green+")").bold )
+                console.log("command:".yellow.bold, `${this.name}`.green )
+                console.log("Usage:".yellow.bold, this.usage )
+                console.log("Options:".yellow.bold)
                 for(let k in this.options){
                     let option = this.options[ k ];
-                    logger.log(` --${k}`);
-                    logger.log(`  Type: `.green.bold, (option.type || Boolean)?.name);
-                    logger.log(`  Value: `.green.bold, 'static' in option ? option.static: option.value);
+                    console.log(` --${k}`);
+                    console.log(`  Type: `.green.bold, (option.type || Boolean)?.name);
+                    console.log(`  Value: `.green.bold, 'static' in option ? option.static: option.value);
                 }
                 return;
             }
@@ -256,20 +255,20 @@ command.exec = function exec(name: string, argv: string[] = process.argv.slice(2
     return commands[name]?.exec( argv );
 }
 command.help = async function help(){
-    logger.log(`Arcaela CLI`.green.bold, ("( Servidores construídos en "+"NodeJS".green+" )").bold );
-    logger.warn(`Available commands:`);
+    console.log(`Arcaela CLI`.green.bold, ("( Servidores construídos en "+"NodeJS".green+" )").bold );
+    console.warn(`Available commands:`);
     for(let name in commands){
         let command = commands[ name ];
-        logger.log("command:".yellow.bold, `${command.name}`.green );
-        logger.log("Usage:".yellow.bold, command.usage )
-        logger.log("Options:".yellow.bold)
+        console.log("command:".yellow.bold, `${command.name}`.green );
+        console.log("Usage:".yellow.bold, command.usage )
+        console.log("Options:".yellow.bold)
         for(let k in command.options){
             let option = command.options[ k ];
-            logger.log(` --${k}`);
-            logger.log(`  Type: `.green.bold, (option.type || Boolean)?.name);
-            logger.log(`  Value: `.green.bold, 'static' in option ? option.static: option.value);
+            console.log(` --${k}`);
+            console.log(`  Type: `.green.bold, (option.type || Boolean)?.name);
+            console.log(`  Value: `.green.bold, 'static' in option ? option.static: option.value);
         }
-        logger.log("\n");
+        console.log("\n");
     }
 };
 

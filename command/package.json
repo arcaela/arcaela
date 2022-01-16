@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "main": "src/index.js",
   "name": "@arcaelas/command",
   "description": "@arcaelas has implemented a library dedicated to building commands.",
@@ -33,7 +33,6 @@
   },
   "homepage": "https://github.com/arcaelas/arcaelas#readme",
   "dependencies": {
-    "@arcaelas/logger": "^1.0.0",
     "colors": "^1.4.0",
     "lodash": "^4.17.21"
   },
