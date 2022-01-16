@@ -189,25 +189,34 @@ export function sleep(time=100, response){
     return new Promise((r)=>setTimeout(()=>r(response), Number(time)));
 };
 
-
-
-
-
-
-/*****************  Development  *******************/
-
-
-
-
-
-/**
- * 
- * @param {{}|[]} object 
- * @returns {{}|[]}
- */
-export function clone(object) {
-    return JSON.parse(JSON.stringify(object));
-}
+export function event() : {
+    on(ev: string, handler: Function): Function,
+    off(ev: string, handler: Function): void,
+    trigger(ev: string, ...arg: any[]): void,
+    [k: string]: any
+}{
+    return {
+        __events: {},
+        on(ev: string, handler: Function) : Function {
+            this.__events[ ev ] ||= [];
+            this.__events[ ev ].push( handler );
+            return ()=>this.off(ev, handler);
+        },
+        off(ev: string, handler: Function) : void {
+            if( this.__events[ ev ] ){
+                let index = this.__events[ ev ].findIndex((v)=>v===handler);
+                if( index > -1)
+                this.__events[ ev ].splice(index, 1);
+            }
+        },
+        trigger(ev: string, ...arg: any[]) : void {
+            if(this.__events[ ev ]){
+                for(let c of this.__events[ ev ])
+                    c(...arg);
+            }
+        },
+    };
+};
 
 const cookie = {
     toSeconds: function (time = 3, e = 0) {
@@ -218,7 +227,7 @@ const cookie = {
         );
         return e = (time - now), e > 0 ? e : 0;
     },
-    set: function (name: string, value: string, time: number|string = Infinity, path?: string, domain?: string, https: boolean = false) {
+    set: function (name: string, value: string, time: number|string = Infinity, path?: string, domain?: string, https: boolean = false) : void | string {
         return document.cookie =
             encodeURIComponent(name) +
             "=" + encodeURIComponent(value) +
@@ -230,7 +239,7 @@ const cookie = {
     get: function (name) {
         return this.all[name] || undefined;
     },
-    remove: function (name, ...server) {
+    remove: function (name, ...server) : boolean {
         return this.set(name, undefined, false, ...server), !this.all[name];
     },
     has: function (key) {
@@ -246,7 +255,7 @@ const cookie = {
 };
 
 
-export function setcookie(name, ...props: [string, number, ...any]) {
+export function setcookie(name, ...props: [string, number, ...any]) : string {
     return props.length ? cookie.set(name, ...props) : cookie.get( name );
 };
 
@@ -255,9 +264,22 @@ export function setcookie(name, ...props: [string, number, ...any]) {
  * @param {string} name 
  * @returns {null}
  */
-export function unsetcookie(name) {
+export function unsetcookie(name) : boolean {
     return cookie.remove(name);
 };
+
+
+/*****************  Development  *******************/
+
+/**
+ * @deprecated No long maintener
+ * @param {{}|[]} object 
+ * @returns {{}|[]}
+ */
+export function clone(object) {
+    return JSON.parse(JSON.stringify(object));
+}
+
 
 /**
  * 
