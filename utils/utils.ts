@@ -57,13 +57,7 @@ export function has(object, path) {
     }
 }
 
-/**
- * 
- * @param {object} object 
- * @param {string} key 
- * @returns {*}
- */
-export function get(object, path = '', defaultValue) {
+export function get(object: object, path:string = '', defaultValue?: any) : any {
     try {
         return path.split('.').reduce((obj, key) => {
             return obj[key];
@@ -71,14 +65,7 @@ export function get(object, path = '', defaultValue) {
     } catch (err) { return defaultValue; }
 }
 
-/**
- * 
- * @param {object} object 
- * @param {string} path 
- * @param {*} value 
- * @returns {@var value}
- */
-export function set(object, path='', value){
+export function set(object: object, path:string ='', value: any): object {
     let target = object;
     let keys = path.split(".");
     while(keys.length){
@@ -90,13 +77,7 @@ export function set(object, path='', value){
     return object;
 }
 
-/**
- * 
- * @param {object} target 
- * @param  {object[]} items
- * @returns {object}
- */
-export function merge(target, ...items){
+export function merge(target: object | null, ...items: object[]): object {
     target = isObject( target ) ? target : {};
     for(let item of items){
         if(typeof item!=='object') continue;
