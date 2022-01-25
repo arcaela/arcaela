@@ -1,0 +1,43 @@
+{
+  "name": "@arcaelas/bridge",
+  "version": "1.1.0",
+  "description": "Library that works as a bridge between the different technologies of a project, either to negotiate the consumption of a Rest API or a Serverless.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "tsc --watch",
+    "prepublishOnly": "tsc && npm version minor",
+    "commit": "npm publish --access=public && rm -rf ./src"
+  },
+  "repository": {
+    "type": "git",
+    "directory": "bridge",
+    "url": "git+https://github.com/arcaelas/arcaelas.git"
+  },
+  "keywords": [
+    "serverless",
+    "api",
+    "arcaelas",
+    "bridge",
+    "fetch",
+    "library",
+    "util",
+    "nodejs",
+    "javascript"
+  ],
+  "author": "Alejandro Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arcaelas/arcaelas/issues"
+  },
+  "homepage": "https://github.com/arcaelas/arcaelas#readme",
+  "dependencies": {
+    "@arcaelas/utils": "^1.11.0",
+    "@arcaelas/xhrequest": "^1.8.0",
+    "lodash": "^4.17.21",
+    "path-to-regex": "^1.3.8"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178",
+    "@types/node": "^17.0.10"
+  }
+}
