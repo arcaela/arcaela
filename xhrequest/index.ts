@@ -78,7 +78,7 @@ declare global {
                 [k: string]: boolean | number | string | []
             }
         }
-        namespace XHRequest {
+        export namespace XHRequest {
             /**
              * @description Defaults values for object with key/value
              */
@@ -166,8 +166,8 @@ declare global {
              * @description Proxies are used to intercept requests and responses from the created instance.
              */
             interface Proxies {
-                request: ((req: globalThis.Request, next: (s?) => void, options: Arcaela.XHRequest.Options) => void)[]
-                response: ((res: Response, next: (s?) => void, req: globalThis.Request, options: Arcaela.XHRequest.Options) => void)[]
+                request: ((req: globalThis.Request, next: (s?: any) => void, options: Arcaela.XHRequest.Options) => void)[]
+                response: ((res: Response, next: (s?: any) => void, req: globalThis.Request, options: Arcaela.XHRequest.Options) => void)[]
             }
             /**
              * @description Driver manager for intercept request and evaluate response.
@@ -182,7 +182,9 @@ declare global {
  */
 class XHRequest {
     private request: Arcaela.XHRequest.RequestInit = {
+        data:{},
         method: "GET",
+        headers: {},
         url: window.location.href,
     }
     private options: Arcaela.XHRequest.Options = {
@@ -199,7 +201,7 @@ class XHRequest {
      * @constructor
      * @description Initiate XHRequest
      */
-    constructor(url?: string | URL | Arcaela.XHRequest.RequestInit, request?: Arcaela.XHRequest.RequestInit) {
+    constructor(url: string | URL | Arcaela.XHRequest.RequestInit, request: Arcaela.XHRequest.RequestInit) {
         if (typeof url === 'string' || url instanceof URL) this.url(url).merge(request);
         else if (typeof url === 'object') this.merge(request);
     }
@@ -239,7 +241,7 @@ class XHRequest {
      * req.url("https://pay.site.com/checkout/12")
      */
     public url(url: string | URL): this;
-    public url(url) {
+    public url(url: string | URL) {
         this.request.url = url instanceof URL ? url.toString() : (
             (typeof url === "string" && !url.match(/^(\/\/)?[a-zA-Z0-9]+\:/)) ? this._domain.concat(url) : url
         );
@@ -251,9 +253,8 @@ class XHRequest {
      * var req = new XHR();
      * req.method("PUT"); // POST GET PUT DELETE OPTIONS HEAD CONNECT TRACE PATCH
      */
-    public method(method: Arcaela.HTTP.Methods): this;
-    public method(method) {
-        this.request.method = method.toUpperCase();
+    public method(method: Arcaela.HTTP.Methods): this {
+        this.request.method = method;
         return this;
     }
     /**
@@ -272,9 +273,9 @@ class XHRequest {
         let [key, value = false] = props;
         if (typeof key === "object") {
             if (value === true) this.request.headers = {};
-            if (key instanceof Headers) key.forEach((v, k, h) => this.request.headers[k] = h.get(k));
+            if (key instanceof Headers) key.forEach((v, k, h) => this.request.headers && (this.request.headers[k]=String(h.get(k))));
             else Object.assign(this.request.headers, key);
-        } else if (key === "string")
+        } else if (this.request.headers && key === "string")
             this.request.headers[key] = value;
         return this;
     }
@@ -301,6 +302,7 @@ class XHRequest {
     public input(inputs: Arcaela.XHRequest.Data): this;
     public input(...props: any[]) {
         let [key, value = false] = props;
+        this.request.data ||= {};
         if (key instanceof HTMLInputElement) {
             if (key.type === 'file') return this.file(key);
             this.request.data[key.name] = key.type === "checkbox" ? key.checked : key.value;
@@ -354,7 +356,7 @@ class XHRequest {
         if (key instanceof HTMLInputElement) {
             if (key.type !== 'file') return this.input(key);
             let files = [];
-            for (let i = 0; i < key.files.length; i++) files.push(key.files.item(i));
+            for (let i = 0; key.files && i < key.files.length; i++) files.push(key.files.item(i));
             this.request.data[key.name] = key.multiple ? files : files.shift();
         } else if (typeof key === "string") {
             if (blob instanceof HTMLInputElement) {
@@ -387,7 +389,7 @@ class XHRequest {
     public merge<K extends keyof Arcaela.XHRequest.RequestInit, V extends Arcaela.XHRequest.RequestInit[K]>(key: K, value: V): this;
     public merge(...props: any[]) {
         let [key, value, ...rest] = props;
-        let object: object = {};
+        let object: Record<string, any> = {};
         if (typeof key === 'string') object[key] = value;
         else if (key instanceof URL) object['url'] = key, rest = [value].concat(rest);
         else if (key instanceof Headers) object['headers'] = key, rest = [value].concat(rest);
@@ -398,18 +400,11 @@ class XHRequest {
         }
         for (let key in object) {
             let value = object[key];
-            switch (key) {
-                case "headers":
-                    this.header(value, ...rest);
-                    break;
-                case "body":
-                case "data":
-                    this.input(value, ...rest);
-                    break;
-                default:
-                    this.request[key] = value;
-                    break;
-            }
+            if(["headers"].includes( key ))
+                this.header(value, ...rest);
+            else if(["body", "data"].includes( key ))
+                this.input(value, ...rest);
+            else this.request[key] = value;
         }
         return this;
     }
@@ -433,7 +428,7 @@ class XHRequest {
      */
     public proxy<E extends keyof Arcaela.XHRequest.Proxies, C extends Arcaela.XHRequest.Proxies[E][0]>(ev: E, callback: C): () => void
     public proxy(...props: any[]) {
-        let [event, callback] = props;
+        let [ event , callback ] = props;
         (this.options.proxies[event] ||= []).push(callback);
         return () => this.options.proxies[event].splice(this.options.proxies[event].findIndex(e => e === callback), 1);
     }

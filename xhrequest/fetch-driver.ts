@@ -1,11 +1,11 @@
-export = async function fetchDriver<R extends Arcaela.XHRequest.RequestInit, O extends Arcaela.XHRequest.Options>(req: R, options: O) : Promise<any> {
+export = async function fetchDriver<R extends Arcaela.XHRequest.RequestInit, O extends Arcaela.XHRequest.Options>(request: R, options: O) : Promise<any> {
     /* We call the functions before packaging the request. */
     for(let before of options.events.before)
-        before(req, options);
-
+        before(request, options);
+    const req: any = {};
     /* HEADERS */
     req.headers = req.headers instanceof Headers ? req.headers : Object.entries(req.headers).reduce((h, [k, v])=>{
-        h.set(k, v);
+        h.set(k, String( v ));
         return h;
     }, new Headers());
 
@@ -51,19 +51,19 @@ export = async function fetchDriver<R extends Arcaela.XHRequest.RequestInit, O e
     }
     
 
-    let request = new Request(req.url, req);
+    let _request = new Request(req.url, req);
     return new Fetch(async (resolve, reject)=> {
         try{
-            let response : Response = options.cache>=0 ? await store.match( request ).then(response=>{
+            let response : Response = options.cache>=0 ? await store.match( _request ).then(response=>{
                 let age = new Date(response.headers.get("date") || 0);
                 if(response && options.cache===0 || ((Date.now()-age.getTime())/1000)<=options.cache)
                     return response;
                 return;
             }) : null;
-            resolve( response || fetch( request.clone() ) );
+            resolve( response || fetch( _request.clone() ) );
         } catch(e){ reject(e); }
     })
-    .then(async response=>store.put(request,response.clone()).then(e=>{
+    .then(async response=>store.put(_request,response.clone()).then(e=>{
         /* We call the functions after error the request. */
         for(let success of options.events.success)
             success(response);
