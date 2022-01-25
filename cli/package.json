@@ -1,5 +1,5 @@
 {
-  "version": "1.5.0",
+  "version": "1.6.0",
   "name": "@arcaelas/cli",
   "main": "./arcaelas/index.js",
   "description": "Arcaela CLI for management your arcaelas's projects.",
@@ -27,7 +27,7 @@
     "@arcaelas/fs": "^1.0.0",
     "@arcaelas/logger": "^1.0.1",
     "cli-table": "^0.3.6",
-    "colors": "^1.4.0",
+    "colors": "1.4.0",
     "cross-spawn": "^7.0.3",
     "node-fetch": "^3.1.1"
   }
