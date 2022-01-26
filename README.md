@@ -1,4 +1,4 @@
-<img src="./assets/banner/dark.svg">
+<img src="https://raw.githubusercontent.com/Arcaelas-Insiders-ES/dist/main/banner/dark.svg">
 
 <div style="text-align:center;margin-top:10px;">
     <a target="_blank" href="https://twitter.com/arcaelas"> <img src="https://badgen.net/twitter/follow/arcaelas"> </a>
@@ -38,18 +38,18 @@
 
 These are projects I work on myself in my free time.
 
-- [@arcaelas/aliasses](https://github.com/arcaelas/arcaelas/tree/main/aliasses) - Empathize with your module imports, using aliases.
-- [@arcaelas/command](https://github.com/arcaelas/arcaelas/tree/main/command) - If you are one of those who like to use terminals, you can create your own native commands using "command".
-- [@arcaelas/eloquent](https://github.com/arcaelas/arcaelas/tree/main/eloquent) - Searching, filtering and mapping collections is the bread and butter for developers, that's why we offer you "eloquent".
-- [@arcaelas/fs](https://github.com/arcaelas/arcaelas/tree/main/fs) - Managing files and directories becomes a complicated task, between Promises and Catchers, but with FS you can use the best features of NodeJS synchronously.
-- [@arcaelas/logger](https://github.com/arcaelas/arcaelas/tree/main/logger) - Printing text in the terminal, creating load and progress buffers, is easier using "Logger".
-- [@arcaelas/string](https://github.com/arcaelas/arcaelas/tree/main/string) - Manipulating text strings is now easier.
-- [@arcaelas/xhrequest](https://github.com/arcaelas/arcaelas/tree/main/xhrequest) - In addition to AJAX, FETCH, AXIOS and different request libraries, XHRequest allows you to create and use your own request drivers.
-- [@arcaelas/utils](https://github.com/arcaelas/arcaelas/tree/main/utils) - A small box of tools, which are implemented in different factions of the library.
+- [@arcaelas/aliasses](https://github.com/Arcaelas-Insiders-ES/aliasses) - Empathize with your module imports, using aliases.
+- [@arcaelas/command](https://github.com/Arcaelas-Insiders-ES/command) - If you are one of those who like to use terminals, you can create your own native commands using "command".
+- [@arcaelas/eloquent](https://github.com/Arcaelas-Insiders-ES/eloquent) - Searching, filtering and mapping collections is the bread and butter for developers, that's why we offer you "eloquent".
+- [@arcaelas/fs](https://github.com/Arcaelas-Insiders-ES/fs) - Managing files and directories becomes a complicated task, between Promises and Catchers, but with FS you can use the best features of NodeJS synchronously.
+- [@arcaelas/logger](https://github.com/Arcaelas-Insiders-ES/logger) - Printing text in the terminal, creating load and progress buffers, is easier using "Logger".
+- [@arcaelas/string](https://github.com/Arcaelas-Insiders-ES/string) - Manipulating text strings is now easier.
+- [@arcaelas/xhrequest](https://github.com/Arcaelas-Insiders-ES/xhrequest) - In addition to AJAX, FETCH, AXIOS and different request libraries, XHRequest allows you to create and use your own request drivers.
+- [@arcaelas/utils](https://github.com/Arcaelas-Insiders-ES/utils) - A small box of tools, which are implemented in different factions of the library.
 
 <div style="text-align:center;margin-top:50px;">
 <hr/>
-<img src="./assets/footer/dark.svg" width="400px" style="margin:20px 0;">
+<img src="https://raw.githubusercontent.com/Arcaelas-Insiders-ES/dist/main/footer/dark.svg" width="400px" style="margin:20px 0;">
 
 > ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>
