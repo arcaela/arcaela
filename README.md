@@ -1,5 +1,4 @@
-![Banner Arcaelas Insiders Dark](https://raw.arcaelas.com/banner/svg/dark.svg#gh-dark-mode-only)
-![Banner Arcaelas Insiders Light](https://raw.arcaelas.com/banner/svg/light.svg#gh-light-mode-only)
+![Banner Arcaelas Insiders Dark](https://raw.arcaelas.com/banner/png/motivation.png)
 
 <div style="text-align:center;margin-top:10px;">
     <a target="_blank" href="https://twitter.com/arcaelas"> <img src="https://badgen.net/twitter/follow/arcaelas"> </a>
