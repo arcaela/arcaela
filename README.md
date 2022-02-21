@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/Arcaelas-Insiders-ES/dist/main/banner/dark.svg">
+<img src="https://raw.arcaelas.com/banner/svg/dark.svg">
 
 <div style="text-align:center;margin-top:10px;">
     <a target="_blank" href="https://twitter.com/arcaelas"> <img src="https://badgen.net/twitter/follow/arcaelas"> </a>
