@@ -1,4 +1,5 @@
-<img src="https://raw.arcaelas.com/banner/svg/dark.svg">
+![Banner Arcaelas Insiders Dark](https://raw.arcaelas.com/banner/svg/dark.svg#gh-dark-mode-only)
+![Banner Arcaelas Insiders Light](https://raw.arcaelas.com/banner/svg/light.svg#gh-light-mode-only)
 
 <div style="text-align:center;margin-top:10px;">
     <a target="_blank" href="https://twitter.com/arcaelas"> <img src="https://badgen.net/twitter/follow/arcaelas"> </a>
@@ -49,7 +50,7 @@ These are projects I work on myself in my free time.
 
 <div style="text-align:center;margin-top:50px;">
 <hr/>
-<img src="https://raw.githubusercontent.com/Arcaelas-Insiders-ES/dist/main/footer/dark.svg" width="400px" style="margin:20px 0;">
+<img src="https://raw.arcaelas.com/brand/svg/dark.svg" width="400px" style="margin:20px 0;">
 
 > ¿Want to discuss any of my open source projects, or something else?Send me a direct message on [Instagram](https://instagram.com/arcaelas) or [Twitter](https://twitter.com/arcaelas).</br> If you already use these libraries and want to support us to continue development, you can sponsor us at [Github Sponsors](https://github.com/sponsors/arcaelas).
 </div>
