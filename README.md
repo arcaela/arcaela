@@ -1,4 +1,4 @@
-![Banner Arcaelas Insiders Dark](https://raw.arcaelas.com/banner/png/dark.png)
+![Banner Arcaelas Insiders Dark](https://github.com/arcaelas/dist/raw/main/banner/png/dark.png)
 
 <div style="text-align:center;margin-top:10px;">
     <a target="_blank" href="https://twitter.com/arcaelas"> <img src="https://badgen.net/twitter/follow/arcaelas"> </a>
